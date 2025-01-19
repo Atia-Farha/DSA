@@ -48,7 +48,7 @@ int main() {          // Entry point of the program
 1. **Header files** add functionality to C++ programs.
 1. `#include`: **Preprocessor directive** to include libraries.
 2. `using namespace std` means that we can use names for objects and variables from the standard library. Avoids using std:: prefix for standard functions.
-3. `int main()`: Main function, execution starts here.
+3. `int main()`: **Main function**, execution starts here.
 4. `cout` is an **object** used together with the insertion operator (`<<`) to output text.
 5. Any code inside its curly brackets `{}` will be executed.
 
@@ -123,7 +123,7 @@ class, struct, enum, typedef.
 ### Conditional Statements:
 `if`, `if-else`, `switch`
 
-Example:
+Syntax:
 ```c
 int x = 5;
 if (x > 0) {
