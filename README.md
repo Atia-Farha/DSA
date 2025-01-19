@@ -73,20 +73,23 @@ return 0;
 
 
 ### Escape Sequence
-| Escape Sequence | Description                               | Example                             |
-|------------------|-------------------------------------------|-------------------------------------|
-| `\\`            | Inserts a backslash character (`\`)       | `std::cout << "C:\\path";`          |
-| `\'`            | Inserts a single quote character (`'`)    | `std::cout << "It\'s fine.";`       |
-| `\"`            | Inserts a double quote character (`"`)    | `std::cout << "\"Hello\"";`         |
-| `\?`            | Inserts a question mark (`?`)             | `std::cout << "What\?";`            |
-| `\a`            | Produces an alert (beep sound)            | `std::cout << "\a";`                |
-| `\b`            | Inserts a backspace                      | `std::cout << "Hello\bWorld";`      |
-| `\f`            | Inserts a form feed                      | `std::cout << "Hello\fWorld";`      |
-| `\n`            | Inserts a newline                        | `std::cout << "Hello\nWorld";`      |
-| `\r`            | Inserts a carriage return                | `std::cout << "Hello\rWorld";`      |
-| `\t`            | Inserts a horizontal tab                 | `std::cout << "Hello\tWorld";`      |
-| `\v`            | Inserts a vertical tab                   | `std::cout << "Hello\vWorld";`      |
-| `\ooo`          | Inserts a character using octal value    | `std::cout << "\101"; // Prints A`  |
-| `\xhh`          | Inserts a character using hex value      | `std::cout << "\x41"; // Prints A`  |
+| Escape Sequence | Description                               | Example                             | Output             |
+|------------------|-------------------------------------------|-------------------------------------|--------------------|
+| `\n`            | Inserts a newline                        | `std::cout << "Hello\nWorld";`      | Hello              |
+|                  |                                           |                                     | World              |
+| `\t`            | Inserts a horizontal tab                 | `std::cout << "Hello\tWorld";`      | Hello    World     |
+| `\\`            | Inserts a backslash character (`\`)       | `std::cout << "C:\\path";`          | C:\path            |
+| `\"`            | Inserts a double quote character (`"`)    | `std::cout << "\"Hello\"";`         | "Hello"            |
+| `\'`            | Inserts a single quote character (`'`)    | `std::cout << "It\'s fine.";`       | It's fine.         |
+| `\b`            | Inserts a backspace                      | `std::cout << "Hello\bWorld";`      | HellWorld          |
+| `\r`            | Inserts a carriage return                | `std::cout << "Hello\rWorld";`      | World              |
+| `\a`            | Produces an alert (beep sound)            | `std::cout << "\a";`                | *Beep sound*       |
+| `\v`            | Inserts a vertical tab                   | `std::cout << "Hello\vWorld";`      | Hello              |
+|                  |                                           |                                     |      World         |
+| `\f`            | Inserts a form feed                      | `std::cout << "Hello\fWorld";`      | Hello              |
+|                  |                                           |                                     |      World         |
+| `\?`            | Inserts a question mark (`?`)             | `std::cout << "What\?";`            | What?              |
+| `\ooo`          | Inserts a character using octal value    | `std::cout << "\101"; // Prints A`  | A                  |
+| `\xhh`          | Inserts a character using hex value      | `std::cout << "\x41"; // Prints A`  | A                  |
 
 > Another way to insert a new line, is with the `endl` **manipulator**.
