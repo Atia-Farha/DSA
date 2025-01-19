@@ -20,8 +20,8 @@ C++ supports classes and objects, while C does not.
 
 ## Usage
 - Operating systems
-- Graphical User Interfaces
 - Embedded systems
+- GUI-based application
 - Game Development
 
 ---
