@@ -100,3 +100,19 @@ return 0;
 | `\xhh`          | Inserts a character using hex value      | `std::cout << "\x41"; // Prints A`  | A                  |
 
 > Another way to insert a new line, is with the `endl` **manipulator**.
+
+## Data Types
+
+### Basic Data Types:
+- `int`: Integer numbers (e.g., 5, -3).
+- `float`: Floating-point numbers (e.g., 5.67).
+- `double`: Double-precision floating-point numbers.
+- `char`: Single characters (e.g., 'a').
+- `bool`: Boolean values (true or false).
+
+
+### Derived Data Types:
+array, pointer, reference.
+
+### User-Defined Data Types:
+class, struct, enum, typedef.
