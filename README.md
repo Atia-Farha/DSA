@@ -134,3 +134,19 @@ if (x > 0) {
 
 ### Loops:
 `for`, `while`, `do-while`
+
+## Functions
+A block of code designed to perform a specific task.
+
+Syntax:
+```c
+returnType functionName(parameters) {
+    // Code block
+    return value; // Optional
+}
+```
+
+### Types of Functions:
+- Built-in Functions (e.g., `sqrt()`, `abs()`).
+- User-Defined Functions.
+- Inline Functions.
