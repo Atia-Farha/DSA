@@ -152,8 +152,8 @@ returnType functionName(parameters) {
 - Inline Functions.
 
 ## Object-Oriented Programming (OOP)
-**Class**: a blueprint for objects.
-**Object** is an instance of a class.
+- **Class**: a blueprint for objects.
+- **Object** is an instance of a class.
 
 Syntax:
 ```c
