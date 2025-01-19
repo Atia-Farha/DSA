@@ -12,7 +12,7 @@
 - **Object-Oriented Programming (OOP):** Supports classes, objects, inheritance, polymorphism, encapsulation, and abstraction.
 - **Low-Level and High-Level:** Combines features of both high-level and low-level languages.
 - **Platform Independent:** Code can be compiled and run on different platforms.
-- **Standard Template Library (STL):** Provides a collection of template classes and functions for common data structures and algorithms.
+- **Standard Template Library (STL):** A collection of template classes and functions for common data structures and algorithms.
 - **Performance:** Faster execution compared to other high-level languages.
 
 ## Difference between C and C++
@@ -150,3 +150,24 @@ returnType functionName(parameters) {
 - Built-in Functions (e.g., `sqrt()`, `abs()`).
 - User-Defined Functions.
 - Inline Functions.
+
+## Object-Oriented Programming (OOP)
+**Class**: a blueprint for objects.
+**Object** is an instance of a class.
+
+Syntax:
+```c
+class MyClass {
+public:
+    int x;           // Data member
+    void display() { // Member function
+        cout << "Value: " << x << endl;
+    }
+};
+```
+
+### Key OOP Features:
+- **Encapsulation**: Binding data and methods into a single unit (class).
+- **Inheritance**: Acquiring properties of a base class by a derived class.
+- **Polymorphism**: Ability to use the same interface for different types.
+- **Abstraction**: Hiding implementation details and showing only functionality.
