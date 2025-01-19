@@ -116,3 +116,11 @@ array, pointer, reference.
 
 ### User-Defined Data Types:
 class, struct, enum, typedef.
+
+## Control Structures
+
+### Conditional Statements:
+`if`, `if-else`, `switch`
+
+### Loops:
+`for`, `while`, `do-while`
