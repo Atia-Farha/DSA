@@ -1,12 +1,19 @@
 # DSA with C++
 
 ## Introduction
+- Developed by **Bjarne Stroustrup** in _1985_.
+- An extension of C.
 - Object oriented language (Supports classes and objects).
 - Cross-platform language (Portable).
-- Developed by _Bjarne Stroustrup_.
-- An extension of C.
 - High performance.
 - Case-sensitive.
+
+## Key Features of C++
+- **Object-Oriented Programming (OOP):** Supports classes, objects, inheritance, polymorphism, encapsulation, and abstraction.
+- **Low-Level and High-Level:** Combines features of both high-level and low-level languages.
+- **Platform Independent:** Code can be compiled and run on different platforms.
+- **Standard Template Library (STL):** Provides a collection of template classes and functions for common data structures and algorithms.
+- **Performance:** Faster execution compared to other high-level languages.
 
 ## Difference between C and C++
 C++ supports classes and objects, while C does not.
@@ -29,20 +36,20 @@ C++ supports classes and objects, while C does not.
 
 ## Code line explanation
 ``` c
-#include <iostream>
-using namespace std;
+#include <iostream>   // Header file for input/output functions
+using namespace std;  // Namespace declaration
 
-int main() {
-  cout << "Hello World!";
-  return 0;
+int main() {          // Entry point of the program
+    cout << "Hello, World!" << endl;  // Output statement
+    return 0;          // Return statement
 }
 ```
-1. `#include <iostream>` is a **header file** library that lets us work with input and output objects, such as `cout`, `cin`. Header files add functionality to C++ programs.
-2. `using namespace std` means that we can use names for objects and variables from the standard library.
-3. `int main()` is the main **function**.
-4. Any code inside its curly brackets `{}` will be executed.
-5. `cout` is an **object** used together with the insertion operator (`<<`) to output/print text.
-6. `return 0;` ends the **main function**.
+1. **Header files** add functionality to C++ programs.
+1. `#include`: Preprocessor directive to include libraries.
+2. `using namespace std` means that we can use names for objects and variables from the standard library. Avoids using std:: prefix for standard functions.
+3. `int main()`: Main function, execution starts here.
+4. `cout` is an **object** used together with the insertion operator (`<<`) to output text.
+5. Any code inside its curly brackets `{}` will be executed.
 
 ### Without `using namespace std`
 ```c
