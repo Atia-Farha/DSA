@@ -122,5 +122,15 @@ class, struct, enum, typedef.
 ### Conditional Statements:
 `if`, `if-else`, `switch`
 
+Example:
+```c
+int x = 5;
+if (x > 0) {
+    cout << "Positive" << endl;
+} else {
+    cout << "Negative" << endl;
+} 
+```
+
 ### Loops:
 `for`, `while`, `do-while`
