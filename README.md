@@ -44,8 +44,9 @@ int main() {          // Entry point of the program
     return 0;          // Return statement
 }
 ```
+
 1. **Header files** add functionality to C++ programs.
-1. `#include`: Preprocessor directive to include libraries.
+1. `#include`: **Preprocessor directive** to include libraries.
 2. `using namespace std` means that we can use names for objects and variables from the standard library. Avoids using std:: prefix for standard functions.
 3. `int main()`: Main function, execution starts here.
 4. `cout` is an **object** used together with the insertion operator (`<<`) to output text.
