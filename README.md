@@ -35,7 +35,7 @@ C++ supports classes and objects, while C does not.
 ---
 
 ## Code line explanation
-``` c
+``` cpp
 #include <iostream>   // Header file for input/output functions
 using namespace std;  // Namespace declaration
 
@@ -53,7 +53,7 @@ int main() {          // Entry point of the program
 5. Any code inside its curly brackets `{}` will be executed.
 
 ### Without `using namespace std`
-```c
+```cpp
 #include <iostream>
 
 int main() {
@@ -68,7 +68,7 @@ A **computer program** is a list of "instructions" to be "executed" by a compute
 In a programming language, these programming instructions are called **statements**.
 
 ### Example
-```c
+```cpp
 cout << "Hello World!";
 cout << "Have a good day!";
 return 0;
@@ -124,7 +124,7 @@ class, struct, enum, typedef.
 `if`, `if-else`, `switch`
 
 Syntax:
-```c
+```cpp
 int x = 5;
 if (x > 0) {
     cout << "Positive" << endl;
@@ -140,7 +140,7 @@ if (x > 0) {
 A block of code designed to perform a specific task.
 
 Syntax:
-```c
+```cpp
 returnType functionName(parameters) {
     // Code block
     return value; // Optional
@@ -157,7 +157,7 @@ returnType functionName(parameters) {
 - **Object** is an instance of a class.
 
 Syntax:
-```c
+```cpp
 class MyClass {
 public:
     int x;           // Data member
