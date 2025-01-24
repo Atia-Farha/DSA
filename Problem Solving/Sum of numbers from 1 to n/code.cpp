@@ -11,7 +11,7 @@ int main() {
     sum += i;
   }
 
-  cout << "Sum of numbers from 1 to " << n << ": " << sum << "\n";
+  cout << "Sum of numbers from 1 to " << n << "= " << sum << "\n";
 
   return 0;
 }
