@@ -7,7 +7,7 @@ int main() {
   cout << "Enter the character: ";
   cin >> ch;
 
-  if (ch >= 'a' && ch <='z') {
+  if (ch >= 'a' && ch <= 'z') {
     cout << "Lowercase\n";
   }
   else {
