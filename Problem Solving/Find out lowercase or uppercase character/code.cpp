@@ -4,7 +4,7 @@ using namespace std;
 int main() {
   char ch;
 
-  cout << "Enter a character: ";
+  cout << "Enter the character: ";
   cin >> ch;
 
   if (ch >= 'a' && ch <='z') {
