@@ -9,11 +9,11 @@ int main() {
 
   for(int i=1; i<=n; i++) {
     if(i % 2 == 0) {
-      Sum += i;
+      sum += i;
     }
   }
 
-  cout << "Sum all even numbers from 1 to " << n << "=" << Sum << "\n";
+  cout << "Sum all even numbers from 1 to " << n << ": " << sum << "\n";
 
   return 0;
 }
