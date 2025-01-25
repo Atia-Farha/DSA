@@ -18,6 +18,7 @@
 ## Tips for Faster Performance
 - Use `"\n"` instead of `endl`.
 - Use `++i` instead of `i++` if possible.
+- Use `size()` instead of `length()` for consistency.
 
 ## Difference between C and C++
 C++ supports classes and objects, while C does not.
