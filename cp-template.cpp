@@ -19,7 +19,6 @@ typedef vector<pll> vpll;
 #define se second
 #define trav(a, x) for(auto& a : x)
 
-// I/O optimization
 #define endl '\n'
 #define fastio ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
 
