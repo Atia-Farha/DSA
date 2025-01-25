@@ -38,7 +38,19 @@ ll modsub(ll a, ll b, ll m = MOD) {
     return ((a % m) - (b % m) + m) % m;  // Ensures non-negative result
 }
 ll modmul(ll a, ll b, ll m = MOD) {
-    return ((a % m) * (b % m)) % m;
+    if (m <= 1e9) return (a % m) * (b % m) % m;  // Fast for small MOD
+    #ifdef __SIZEOF_INT128__
+        return (ll)((__int128)a * b % m);        // Use 128-bit if available
+    #else
+        ll res = 0;
+        a %= m;
+        while (b > 0) {                          // Fallback to binary
+            if (b % 2) res = (res + a) % m;
+            a = (a * 2) % m;
+            b /= 2;
+        }
+        return res;
+    #endif
 }
 ll modpow(ll base, ll exp, ll m = MOD) {
     ll res = 1;
