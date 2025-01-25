@@ -22,7 +22,7 @@ typedef vector<pll> vpll;
 #define se second
 
 #define endl '\n'
-#define fastio ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#define fastio ios_base::sync_with_stdio(0); cin.tie(0)
 
 const ll MOD = 1e9 + 7;
 const ll INF = 1e18;
