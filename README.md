@@ -15,6 +15,10 @@
 - **Standard Template Library (STL):** A collection of template classes and functions for common data structures and algorithms.
 - **Performance:** Faster execution compared to other high-level languages.
 
+## Tips for Faster Performance
+- Use `"\n"` instead of `endl`.
+- Use `++i` instead of `i++` if possible.
+
 ## Difference between C and C++
 C++ supports classes and objects, while C does not.
 
