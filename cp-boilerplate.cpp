@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+#pragma GCC optimize("O3,unroll-loops")
+#pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
+
 using ll = long long;
 using ull = unsigned long long;
 using vi = vector<int>;
@@ -38,13 +41,13 @@ ll modsub(ll a, ll b, ll m = MOD) {
     return ((a % m) - (b % m) + m) % m;  // Ensures non-negative result
 }
 ll modmul(ll a, ll b, ll m = MOD) {
-    if (m <= 1e9) return (a % m) * (b % m) % m;  // Fast for small MOD
+    if (m <= 3e9) return (a % m) * (b % m) % m;  // Optimized threshold
     #ifdef __SIZEOF_INT128__
-        return (ll)((__int128)a * b % m);        // Use 128-bit if available
+        return (ll)((__int128)a * b % m);
     #else
         ll res = 0;
         a %= m;
-        while (b > 0) {                          // Fallback to binary
+        while (b > 0) {
             if (b % 2) res = (res + a) % m;
             a = (a * 2) % m;
             b /= 2;
@@ -65,7 +68,7 @@ ll modinv(ll a, ll m = MOD) {
     return modpow(a, m - 2, m);
 }
 ll gcd(ll a, ll b) {
-    while(b) { a %= b; swap(a, b); }
+    while (b) a %= b, a ^= b, b ^= a, a ^= b;
     return a;
 }
 ll lcm(ll a, ll b) {
