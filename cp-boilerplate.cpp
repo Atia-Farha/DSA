@@ -65,14 +65,36 @@ ll modpow(ll base, ll exp, ll m = MOD) {
     return res;
 }
 ll modinv(ll a, ll m = MOD) {
-    return modpow(a, m - 2, m);
+    ll g = m, x = 0, y = 1;
+    if (m == 1) return 0;
+    a %= m;
+    if (a < 0) a += m;
+    if (a == 0) return -1; // No inverse exists
+    ll m0 = m;
+    ll x0 = 0, x1 = 1;
+    while (a > 1) {
+        ll q = a / m;
+        ll t = m;
+        m = a % m, a = t;
+        t = x0;
+        x0 = x1 - q * x0;
+        x1 = t;
+    }
+    if (x1 < 0) x1 += m0;
+    return a == 1 ? x1 : -1; // -1 if no inverse
 }
 ll gcd(ll a, ll b) {
     while (b) a %= b, a ^= b, b ^= a, a ^= b;
     return a;
 }
 ll lcm(ll a, ll b) {
-    return (a / gcd(a, b)) * b;
+    ll g = gcd(a, b);
+    a /= g;
+    #ifdef __SIZEOF_INT128__
+        return (ll)((__int128)a * b);
+    #else
+        return a * b; // Potential overflow if a*b exceeds LLONG_MAX
+    #endif
 }
 
 void solve() {
