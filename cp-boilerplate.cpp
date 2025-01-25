@@ -1,20 +1,35 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-typedef long long ll;
-typedef unsigned long long ull;
-typedef pair<int, int> pii;
-typedef pair<ll, ll> pll;
-typedef vector<int> vi;
-typedef vector<ll> vl;
-typedef vector<pii> vpii;
-typedef vector<pll> vpll;
+using ll = long long;
+using ull = unsigned long long;
+using vi = vector<int>;
+using vl = vector<ll>;
+using vvi = vector<vi>;
+using pii = pair<int, int>;
+using pll = pair<ll, ll>;
+using vpii = vector<pii>;
+using vpll = vector<pll>;
+
+#define FOR(i, a, b) for(int i = (a); i < (b); ++i)
+#define REP(i, n) for(int i = 0; i < (n); ++i)
+#define foreach(a, x) for (auto& a : x)
+#define all(x) (x).begin(), (x).end()
+#define rall(x) x.rbegin(), x.rend()
+#define sz(x) ((int)(x).size())
+#define pb push_back
+#define mp make_pair
+#define fi first
+#define se second
+#define setbit(x, i) (x |= (1LL << i))
+#define clearbit(x, i) (x &= ~(1LL << i))
+#define checkbit(x, i) (x & (1LL << i))
 
 #define endl '\n'
 #define fastio ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr)
 
-const ll MOD = 1e9 + 7;
-const ll INF = 1e18;
+constexpr ll MOD = 1e9 + 7;
+constexpr ll INF = 1e18;
 
 ll modadd(ll a, ll b, ll m = MOD) {
     return ((a % m) + (b % m) + m) % m;
