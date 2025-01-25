@@ -63,6 +63,8 @@ void _print(int x) { cerr << x; }
 void _print(long long x) { cerr << x; }
 void _print(string x) { cerr << x; }
 void _print(char x) { cerr << x; }
+void _print(pii x) { cerr << "(" << x.fi << ", " << x.se << ")"; }
+void _print(bool x) { cerr << (x ? "true" : "false"); }
 template <class T> void _print(vector<T> v) {
     cerr << "[ ";
     for (T i : v) {
