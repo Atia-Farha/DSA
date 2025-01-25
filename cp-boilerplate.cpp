@@ -93,7 +93,7 @@ ll modinv(ll a, ll m = MOD) {
         g %= r; swap(g, r);
         x -= q * y; swap(x, y);
     }
-    if(g != 1) return -1;  // No inverse exists
+    if(g != 1) return -1;
     if(x < 0) x += m;
     return x;
 }
