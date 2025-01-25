@@ -9,30 +9,33 @@ typedef vector<ll> vl;
 typedef vector<pii> vpii;
 typedef vector<pll> vpll;
 
-#define for(i, a, b) for(int i = a; i < (b); ++i)
-#define rep(i, n) for(i, 0, n)
+#define FOR(i, a, b) for(int i = (a); i < (b); ++i)
+#define REP(i, n) FOR(i, 0, n)
+#define foreach(a, x) for(auto& a : x)
 #define all(x) begin(x), end(x)
 #define sz(x) (int)(x).size()
 #define pb push_back
 #define mp make_pair
 #define fi first
 #define se second
-#define trav(a, x) for(auto& a : x)
 
 #define endl '\n'
-#define fastio ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+#define fastio ios_base::sync_with_stdio(0); cin.tie(0)
 
-const int MOD = 1e9 + 7;
+const int MOD = 1e9+7;
 const ll INF = 1e18;
 
 ll modpow(ll base, ll exp) {
     ll res = 1;
-    while (exp > 0) {
-        if (exp % 2 == 1) res = (res * base) % MOD;
+    for(; exp > 0; exp >>= 1) {
+        if(exp & 1) res = (res * base) % MOD;
         base = (base * base) % MOD;
-        exp /= 2;
     }
     return res;
+}
+
+void solve() {
+    
 }
 
 int main() {
