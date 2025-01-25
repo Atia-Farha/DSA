@@ -11,7 +11,7 @@ typedef vector<pii> vpii;
 typedef vector<pll> vpll;
 
 #define endl '\n'
-#define fastio ios_base::sync_with_stdio(0); cin.tie(0)
+#define fastio ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr)
 
 const ll MOD = 1e9 + 7;
 const ll INF = 1e18;
