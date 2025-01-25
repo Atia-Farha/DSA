@@ -2,7 +2,7 @@
 using namespace std;
 
 typedef long long ll;
-#define fastio ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
+#define fastio ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
 
 const int MOD = 1e9 + 7;
 const ll INF = 1e18;
