@@ -1,8 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+#ifdef __GNUC__
 #pragma GCC optimize("O3,unroll-loops")
 #pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
+#endif
 
 #define fastio ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr)
 #define endl '\n'
@@ -39,27 +41,32 @@ inline bool checkbit(ll x, int i) { ASSERT_BIT(i); return x & (1LL << i); }
 
 #define ASSERT_MOD(m) ((void)0)
 
+// Optimized modular arithmetic
 ll modadd(ll a, ll b, ll m = MOD) {
     ASSERT_MOD(m);
-    return ((a % m) + (b % m) + m) % m;
+    ll sum = (a % m) + (b % m);
+    sum >= m ? sum -= m : (sum < 0 ? sum += m : sum);
+    return sum;
 }
 
 ll modsub(ll a, ll b, ll m = MOD) {
     ASSERT_MOD(m);
-    return ((a % m) - (b % m) + m) % m;
+    ll diff = (a % m) - (b % m);
+    diff < 0 ? diff += m : (diff >= m ? diff -= m : diff);
+    return diff;
 }
 
 ll modmul(ll a, ll b, ll m = MOD) {
     ASSERT_MOD(m);
     if(m <= 3e9) return (a % m) * (b % m) % m;
     #ifdef __SIZEOF_INT128__
-        return (ll)((__int128)a * b % m);
+        return (ll)((__int128)(a % m) * (b % m) % m);
     #else
+        a %= m; b %= m;
         ll res = 0;
-        a %= m;
         while(b > 0) {
-            if(b & 1) res = (res + a) % m;
-            a = (a << 1) % m;
+            if(b & 1) res = modadd(res, a, m);
+            a = modadd(a, a, m);
             b >>= 1;
         }
         return res;
@@ -67,9 +74,7 @@ ll modmul(ll a, ll b, ll m = MOD) {
 }
 
 ll modpow(ll base, ll exp, ll m = MOD) {
-    if(exp == 0) {
-        return base == 0 ? 0 : 1 % m;
-    }
+    if(exp == 0) return base == 0 ? 0 : 1;
     ASSERT_MOD(m);
     base %= m;
     if(base < 0) base += m;
@@ -81,6 +86,7 @@ ll modpow(ll base, ll exp, ll m = MOD) {
     return res;
 }
 
+// Optimized GCD/LCM
 ll gcd(ll a, ll b) {
     a = abs(a); b = abs(b);
     if(a == 0 && b == 0) return 0;
@@ -115,12 +121,11 @@ ll modinv(ll a, ll m = MOD) {
         x0 = x1 - q * x0;
         x1 = t;
     }
-    if(x1 < 0) x1 += m0;
-    return a == 1 ? x1 : -1;
+    return x1 < 0 ? x1 + m0 : (a == 1 ? x1 : -1);
 }
 
 void solve() {
-
+    
 }
 
 int main() {
