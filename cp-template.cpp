@@ -10,7 +10,7 @@ typedef vector<ll> vl;
 typedef vector<pii> vpii;
 typedef vector<pll> vpll;
 
-#define FOR(i, a, b) for (int i = a; i < (b); ++i)
+#define FOR(i, a, b) for (int i = a; i < b; ++i)
 #define REP(i, n) FOR(i, 0, n)
 #define foreach(a, x) for (auto& a : x)
 #define all(x) begin(x), end(x)
