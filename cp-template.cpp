@@ -28,7 +28,8 @@ const ll MOD = 1e9 + 7;
 const ll INF = 1e18;
 
 ll gcd(ll a, ll b) {
-    return b == 0 ? a : gcd(b, a % b);
+    while(b) { a %= b; swap(a, b); }
+    return a;
 }
 ll lcm(ll a, ll b) {
     return a / gcd(a, b) * b;
