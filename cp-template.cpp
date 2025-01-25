@@ -34,8 +34,8 @@ ll gcd(ll a, ll b) {
 ll lcm(ll a, ll b) {
     return a / gcd(a, b) * b;
 }
-ll modadd(ll a, ll b, ll m = MOD) {
-    return ((a % m + b % m) % m + m) % m;
+ll modadd(ll a, ll b) {
+    return ((a%MOD + b%MOD) % MOD + MOD) % MOD;
 }
 ll modsub(ll a, ll b, ll m = MOD) {
     return ((a % m - b % m) % m + m) % m;
