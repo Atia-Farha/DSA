@@ -2,6 +2,8 @@
 using namespace std;
 
 typedef long long ll;
+
+#define endl '\n'
 #define fastio ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
 
 const int MOD = 1e9 + 7;
