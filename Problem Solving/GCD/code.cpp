@@ -6,12 +6,11 @@ using namespace std;
 #define endl '\n'
 
 ll gcd(ll a, ll b) {
-    if (a == 0) return abs(b);
-    if (b == 0) return abs(a);
-
     a = abs(a);
-    b = abs(b);
+    b = abs(b); 
 
+    if (a == 0) return b;
+    if (b == 0) return a;
     if (a == b) return a;
  
     while (b != 0) {
