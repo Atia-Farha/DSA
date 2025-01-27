@@ -1,4 +1,4 @@
-// Euclid's Algorithm (Iterative Version)
+// Euclidean's Algorithm (Iterative Version)
 #include <bits/stdc++.h>
 using namespace std;
 
