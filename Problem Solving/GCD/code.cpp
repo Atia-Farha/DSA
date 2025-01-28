@@ -5,6 +5,8 @@ using namespace std;
 #define fastio ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr)
 #define endl '\n'
 
+using ll = long long;
+
 ll gcd(ll a, ll b) {
     a = abs(a);
     b = abs(b); 
