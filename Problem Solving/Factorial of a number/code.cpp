@@ -21,7 +21,9 @@ ll factorial(ll n) {
     return result;
 }
 
-int main() {
+int main() 
+    fastio;
+
     ll n;
     cin >> n;
 
