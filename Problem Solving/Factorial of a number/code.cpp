@@ -17,6 +17,7 @@ ll factorial(ll n) {
     for (ll i = 2; i <= n; ++i) {
         result = (result * i) % MOD;
     }
+
     return result;
 }
 
