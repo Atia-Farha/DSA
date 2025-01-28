@@ -7,7 +7,7 @@ using namespace std;
 const int MOD = 1e9 + 7;
 
 using ll = long long;
- 
+
 ll factorial(ll n) {
     if (n == 0 || n == 1) {
         return 1;
@@ -21,7 +21,7 @@ ll factorial(ll n) {
     return result;
 }
 
-int main() 
+int main() {
     fastio;
 
     ll n;
