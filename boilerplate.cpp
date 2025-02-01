@@ -7,7 +7,7 @@ using namespace std;
 int main() {
     fastio;
 
-    // Your code here, using '\n' instead of endl
+    
     
     return 0;
 }
