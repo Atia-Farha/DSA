@@ -28,7 +28,7 @@ int main() {
     }
 
     for (int d : smallDivisors) {
-        cout << d << '\n';
+        cout << d << endl;
     }
 
     while (!largeDivisors.empty()) {
