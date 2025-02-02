@@ -21,9 +21,7 @@ int main() {
     for (int i = 1; i * i <= A; i++) {
         if (A % i == 0) {
             smallDivisors.push_back(i);
-            if (i != A / i) {
-                largeDivisors.push(A / i);
-            }
+            if (i != A / i) largeDivisors.push(A / i);
         }
     }
 
