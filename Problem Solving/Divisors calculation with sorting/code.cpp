@@ -25,9 +25,7 @@ int main() {
         }
     }
 
-    for (int d : smallDivisors) {
-        cout << d << endl;
-    }
+    for (int d : smallDivisors) cout << d << endl;
 
     while (!largeDivisors.empty()) {
         cout << largeDivisors.top() << endl;
