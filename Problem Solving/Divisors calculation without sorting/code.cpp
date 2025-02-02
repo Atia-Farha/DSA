@@ -5,7 +5,7 @@ using namespace std;
 #define endl '\n'
 
 int main() {
-    f	astio
+    fastio;
 
     int A;
     cin >> A;
