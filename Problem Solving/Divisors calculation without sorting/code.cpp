@@ -10,7 +10,7 @@ int main() {
     int A;
     cin >> A;
 
-    for (int i = 1; i * i <= A; i++) {
+    for (int i = 1; i * i <= A; ++i) {
         if (A % i == 0) {
             cout << i << endl;
             if (i != A / i) cout << A / i << '\n';
