@@ -18,7 +18,7 @@ int main() {
     vector<int> smallDivisors;
     stack<int> largeDivisors; 
 
-    for (int i = 1; i * i <= A; i++) {
+    for (int i = 1; i * i <= A; ++i) {
         if (A % i == 0) {
             smallDivisors.push_back(i);
             if (i != A / i) largeDivisors.push(A / i);
