@@ -11,7 +11,7 @@ int main() {
 
     set<int> divisors;
 
-    for (int i = 1; i * i <= A; i++) {
+    for (int i = 1; i * i <= A; ++i) {
         if (A % i == 0) {
             divisors.insert(i);
             divisors.insert(A / i);
