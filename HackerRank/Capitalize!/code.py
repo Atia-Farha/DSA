@@ -1,7 +1,7 @@
 #!/bin/python3
 
 import math
-imports
+import os
 import random
 import re
 import sys
