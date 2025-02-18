@@ -1,4 +1,4 @@
-#!/bin/python3
+# Fail in string start with number
 
 import math
 import os
@@ -6,7 +6,6 @@ import random
 import re
 import sys
 
-# Complete the solve function below.
 def solve (s):
     return s.title()
 
