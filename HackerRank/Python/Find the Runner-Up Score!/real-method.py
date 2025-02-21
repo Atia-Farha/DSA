@@ -1,6 +1,7 @@
 if __name__ == '__main__':
-    nums = array(map (int, input().split()))
-    max_num = float('-in)
+    nums = list(map(int, input().split()))  
+
+    max_num = float('-inf')
     runner = float('-inf')
 
     for n in nums:
