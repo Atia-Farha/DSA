@@ -12,8 +12,8 @@ int main() {
 
     while(d > 0) {
         r = d % 2;
-        d /= 2;
         b += ( r * pow);
+        d /= 2;
         pow *= 10;
     }
 
