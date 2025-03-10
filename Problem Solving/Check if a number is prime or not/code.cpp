@@ -5,7 +5,6 @@ int main() {
   int n;
   bool prime = true;
 
-  cout << "Enter the number: ";
   cin >> n;
 
   if(n < 2) { 
