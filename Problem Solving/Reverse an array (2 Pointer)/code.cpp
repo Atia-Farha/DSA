@@ -1,14 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define fastio ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr)
+#define fastio ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr) 
 #define endl '\n'
 
 template <typename T>
 void reverseArray(T arr[], int size) {
     int start = 0, end = size - 1;
-
-    while(start < end) {
+    
+    while (start < end) {
         swap(arr[start], arr[end]);
         ++start;
         --end;
@@ -23,8 +23,8 @@ int main() {
 
     reverseArray(arr, size);
 
-    for(int i = 0; i < size; ++i) {
-        cout << arr[i] << " ";
+    for (int num : arr) {
+        cout << num << " ";
     }
     cout << endl;
 
