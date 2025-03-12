@@ -8,7 +8,6 @@ int main() {
     fastio;
 
     int arr[] = {1, 3, 8, 5, 3, 6, 5};
-    int size = sizeof(arr) / sizeof(arr[0]);
 
     for(int value : arr) {
         int i = 0;
