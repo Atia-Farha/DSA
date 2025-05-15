@@ -1,5 +1,13 @@
 // https://codeforces.com/contest/1789/problem/A
 
+// Note:
+// 1. Prefix:
+//        [1,2,4,5] its prefixes are [1,2], [1,2,4] and [1,2,4,5]
+// 2. Good Array = when the GCD of any of the subarrays of the array is smaller than or equal to 2.
+// 3. Beautiful Array = If all the prefixes of the array whose length is no less than 2 are Good.
+// 4. If the first subarray with length 2 is good, that means all the prefixes will be good. Because after that, even if we increase the length, the GCD will always just decrease more.
+// 5. Reordering allowed. So we need to find out whether any subarray is good in the array. If we find one, the full array will be beautiful.
+
 #include <bits/stdc++.h>
 using namespace std;
 
