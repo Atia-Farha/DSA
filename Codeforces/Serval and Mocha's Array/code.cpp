@@ -6,7 +6,7 @@
 // 2. Good Array = when the GCD of at least one subarray in the array is smaller than or equal to 2.
 // 3. Beautiful Array = If all the prefixes of the array whose length is no less than 2 are Good.
 // 4. If the first subarray with length 2 is good, that means all the prefixes will be good. Because after that, even if we increase the length, the GCD will always just decrease more.
-// 5. Reordering is allowed. So we need to find out whether any subarray is good in the array. If we find one, that means it's possible to make the full array beautiful by reordering (putting that pair at the first in array).
+// 5. Reordering is allowed. So we need to find out whether any subarray is good in the array. If we find one, that means it's possible to make the full array beautiful by reordering (putting that pair at the first in the array).
 
 #include <bits/stdc++.h>
 using namespace std;
